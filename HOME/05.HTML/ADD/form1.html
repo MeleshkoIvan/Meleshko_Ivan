@@ -89,13 +89,13 @@
                         <fieldset>
                             <legend>Оставьте ваш отзыв</legend>
                             <label>
-                                <input type=text name="Имя" required>*Имя
+                                <input type="text" name="Имя" required>*Имя
                             </label><br>
                             <label>
                                 <input type="email" name="e-mail" required>*e-mail
                             </label><br>
                             <input type="email" placeholder="Форма отправки"><br>
-                            <input type=submit value="Отправить"><br>
+                            <input type="submit" value="Отправить"><br>
                             <span>* - Это обязательное поле<br>
                                 поле email - с проверкой<br>
                                 метод POST
@@ -135,8 +135,32 @@
                 </td>
             </tr>
             <tr>
-                <td><strong>Загрузка файла на сервер</strong></td>
-                <td><strong>Валидация данных HTML5</strong></td>
+                <td><strong>Загрузка файла на сервер:</strong>
+                <form name="tab7" action="http://fe.it-academy.by/TestForm.php" enctype="http://multipart/form-data" method="post">
+                <fieldset>
+                    <legend>Uploat</legend>
+                    <spam>Файл:</spam><br>
+                    <label>
+                        <input type="file" name="file-field" dir="ltr" value="Shoose File"> 
+                    </label>
+                        <spam>No file chosen</spam><br>
+                        <spam>Срок хранения (года):</spam><br>
+                    <label>
+                        <input type="text">
+                    </label>
+                    <label>
+                        <input type="submit" value="загрузить">
+                    </label>
+
+                </fieldset>
+            </form>
+        </td>
+            
+            
+            
+            
+            
+            <td><strong>Валидация данных HTML5:</strong></td>
             </tr>
             
 
