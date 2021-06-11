@@ -13,8 +13,12 @@
                     <form name="tab1" action="http://fe.it-academy.by/TestForm.php"  method="post"> 
                     <fieldset>
                         <legend>Строка поиска</legend>
+                        <label>
                         <input type="text" maxlength="10">
+                    </label>
+                    <label>
                         <input type="submit" value="Искать"><br>
+                    </label>
                         <label>
                             <input type="radio" name="radio_group" value="на сайте">на сайте
                         </label>
@@ -151,20 +155,29 @@
                     <label>
                         <input type="submit" value="загрузить">
                     </label>
-
                 </fieldset>
             </form>
         </td>
             
-            
-            
-            
-            
-            <td><strong>Валидация данных HTML5:</strong></td>
-            </tr>
-            
+         <td><strong>Валидация данных HTML5:</strong>
+            <form name="tab8" action="http://fe.it-academy.by/TestForm.php" method="post">
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <label>
+                        <input  type="text" name="text" pattern="[А-Яа-яЁё]+" placeholder="Только русские буквы"><br>
+                    </label>
+                    <spam>Телефонный номер в формате</spam><br>
+                    <spam>+XXX-XX-XXXXXXX, где Х - любое число</spam>
+                    <label>
+                        <input type="tel" name="tel" placeholder="+375-29-1234567" pattern="+[0-9]{3}-[0-9]{2}-[0-9]{7}"><br>
+                    </label>
+                    <label>
+                        <input type="submit" value="Проверить">
+                    </label>
 
-        </table>
-        
+                </fieldset>
+        </td>
+            </tr>
+         </table>
 </body>
 </html>
